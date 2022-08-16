@@ -17,14 +17,18 @@ const Navbar = () => {
         </Button> */}
             </div>\
             <Menu theme="dark">
-                <Menu.Item icon={<HomeOutlined />} />
-                <Link to='/'> Home </Link>
-                <Menu.Item icon={<FundOutlined />} />
-                <Link to='/crptocurrencies'> Cryptocurrencies </Link>
-                <Menu.Item icon={<MoneyCollectOutlined />} />
-                <Link to='/exchanges'> Exchanges </Link>
-                <Menu.Item icon={<BulbOutlined />} />
-                <Link to='/'> News </Link>
+                <Menu.Item icon={<HomeOutlined />}>
+                    <Link to='/'> Home </Link>
+                </Menu.Item>
+                <Menu.Item icon={<FundOutlined />}>
+                    <Link to='/cryptocurrencies'> Cryptocurrencies </Link>
+                </Menu.Item>
+                <Menu.Item icon={<MoneyCollectOutlined />}>
+                    <Link to='/exchanges'> Exchanges </Link>
+                </Menu.Item>
+                <Menu.Item icon={<BulbOutlined />}>
+                    <Link to='/news'> News </Link>
+                </Menu.Item>
             </Menu>
         </div>
     )
