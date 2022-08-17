@@ -354,6 +354,14 @@ width: 70%;
 .search-crypto{
     margin: 20px auto 30px auto;
     width: 250px;
+   
+}
+.search-input::placeholder{
+    color: lightgrey;
+}
+.search-input {
+    border: 1px solid lightgray;
+    padding: .2rem;
 }
 .crypto-card-container{
     min-height: 65vh !important;
