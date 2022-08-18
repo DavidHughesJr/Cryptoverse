@@ -9,7 +9,6 @@ import { useGetCryptosQuery } from '../services/cryptoApi'
 
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100
-  console.log(count)
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count)
   const [cryptos, setCryptos] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
@@ -22,9 +21,8 @@ const Cryptocurrencies = ({ simplified }) => {
   }, [cryptosList, searchTerm])
 
 
-  console.log(cryptos)
   if (isFetching) return 'Loading...'
-
+ console.log(cryptos[0])
   return (
     <>
      {
